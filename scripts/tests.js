@@ -1,32 +1,13 @@
 (function (){
 
   'use strict';
-var K = 10;
-var Q = 10;
-var J = 10;
-var A = 11;
-function handValue(cards){
-  var hand = 0;
-  for(var i = 0; i < cards.length; i++){
-    hand += cards[i];
-  }
-  if (hand <= 21){
-  return hand;
-} else {
-  hand = 0;
-  A = 1;
-  for(var i = 0; i < cards.length; i++){
-    hand += cards[i];
-  } return hand;
-
-}
-}
-handValue([8,7,A,A]);
 
 
 
 
-  Assert Function
+
+
+  // Assert Function
 
   function assert(hand, value) {
     let output = handValue(hand);
